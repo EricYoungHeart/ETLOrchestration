@@ -1,0 +1,6 @@
+@Etl.Orchestrator_HostAddress = http://localhost:5048
+
+GET {{Etl.Orchestrator_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
