@@ -1,0 +1,6 @@
+cd D:\ETL\Etl.Orchestrator
+git init
+git branch -m main          # name your branch main to match GitHub
+git remote add origin https://github.com/<you>/<repo>.git
+git fetch origin
+git checkout -b main origin/main   # start from the remote's initial commit (README/.gitignore)
