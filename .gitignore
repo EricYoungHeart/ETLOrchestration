@@ -1,0 +1,133 @@
+# -------------------------
+# OS cruft
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# IDE / editors
+# -------------------------
+.vs/
+.idea/
+*.iml
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.DS_Store
+
+# VS Code (обычно игнорим всё, кроме рекомендованных файлов)
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+
+# ReSharper / Rider
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# -------------------------
+# .NET build / artifacts
+# -------------------------
+bin/
+obj/
+out/
+artifacts/
+TestResults/
+*.cache/
+*.lock.json
+*.tmp
+*.log
+
+# Publish output
+publish/
+
+# MSBuild/ClickOnce etc.
+[Bb]uild[Ll]og.*
+Generated Files/
+
+# -------------------------
+# ASP.NET / Config
+# -------------------------
+# Не коммитим локальные конфиги
+appsettings.*.local.json
+appsettings.Local.json
+appsettings.Development.local.json
+
+# Рекомендуется коммитить:
+# - appsettings.json, appsettings.Development.json (без секретов)
+# - Properties/launchSettings.json (developer experience)
+# Если хотите скрыть launchSettings.json, раскомментируйте:
+# Properties/launchSettings.json
+
+# Профили публикации (user-специфика и иногда секреты)
+Properties/PublishProfiles/*.pubxml.user
+# При желании можно игнорировать все профили:
+# Properties/PublishProfiles/
+
+# -------------------------
+# NuGet
+# -------------------------
+*.nupkg
+*.snupkg
+packages/
+!packages/build/
+.nuget/NuGet.Config
+.nuget/NuGet.exe
+.nuget/NuGet.targets
+
+# -------------------------
+# Logs / diagnostics
+# -------------------------
+logs/
+*.log
+*.etl
+*.svclog
+
+# -------------------------
+# Coverage
+# -------------------------
+coverage*/
+.coverage
+*.coverage
+*.coveragexml
+coverage.cobertura.xml
+lcov.info
+
+# -------------------------
+# Frontend (если есть SPA/Assets)
+# -------------------------
+node_modules/
+bower_components/
+dist/
+build/
+.cache/
+.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# LibMan
+wwwroot/lib/
+libman.cache
+
+# -------------------------
+# Data files
+# -------------------------
+*.db
+*.db-shm
+*.db-wal
+
+# -------------------------
+# Docker / env
+# -------------------------
+.env
+# docker-compose.override.yml  # ← раскомментируйте, если храните там секреты
+
+# -------------------------
+# Tools / misc
+# -------------------------
+*.tgz
+*.zip
+*.7z
